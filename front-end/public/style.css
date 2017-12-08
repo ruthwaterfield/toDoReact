@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: 	#307be1;
+    color: 				#ffffff;
+    padding: 10px;
+}
+
+body {
+    background-color: 	#001245;
+    color: 		#73aeff;
+}
+
+.App {
+    text-align: center;
+    font-size: 20px;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: 	#307be1;
+    color: 				#ffffff;
+    padding: 10px;
+    height: 150px;
+}
+
+.App-title {
+    font-size: 1.5em;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+@keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+form {
+    color: 	#b8e4ff;
+    margin-top: 20px;
+}
+
+.NewTask-Checkbox {
+    margin-top: 8px;
+}
+
+.NewTask-CheckboxArea {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+
+.NewTask-Submit {
+    font-size: 20px;
+    background-color:   #73aeff;
+    color:   #001245;
+}
+
+.NewTask-Submit:hover {
+    background-color: 	#307be1;
+    color:   #001245;
+}
+
+footer {
+    text-align: left;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+
+
