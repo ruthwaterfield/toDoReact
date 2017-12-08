@@ -48,25 +48,36 @@ form {
     margin-top: 20px;
 }
 
-.NewTask-Checkbox {
+.Checkbox {
     margin-top: 8px;
 }
 
-.NewTask-CheckboxArea {
+.CheckboxArea {
     padding-top: 5px;
     padding-bottom: 10px;
 }
 
 
-.NewTask-Submit {
+.Submit {
     font-size: 20px;
     background-color:   #73aeff;
     color:   #001245;
 }
 
-.NewTask-Submit:hover {
+.Submit:hover {
     background-color: 	#307be1;
     color:   #001245;
+}
+
+.Delete {
+    font-size: 20px;
+    background-color:   #73aeff;
+    color:   #001245;
+}
+
+.Delete:hover {
+    background-color: #ff0000;
+    color:   #ffffff;
 }
 
 footer {

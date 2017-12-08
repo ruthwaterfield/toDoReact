@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import NewTask from "./NewTask";
 import UncompletedTasks from "./UncompletedTasks";
+import CompletedTasks from "./CompletedTasks"
 
 class App extends Component {
     render() {
@@ -13,6 +14,7 @@ class App extends Component {
                 </header>
                 <NewTask/>
                 <UncompletedTasks/>
+                <CompletedTasks/>
                 <footer className="navbar-fixed-bottom">
                     <p>What have you done today to make me feel proud?</p>
                 </footer>

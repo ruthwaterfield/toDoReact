@@ -12,6 +12,13 @@ app.engine('handlebars', exphbs({defaultLayout: 'main'}))
 app.set('view engine', 'handlebars')
 app.use(express.static('public'))
 
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*")
+    res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE")
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+    next()
+})
+
 var findTasks = function (db, showDoneTasks, callback) {
     var cursor = db.collection('tasks').find({"done": showDoneTasks})
     var data = []
@@ -117,7 +124,7 @@ app.put('/tasks/:id', function (req, res) {
     });
 })
 
-app.del('/tasks/:id', function (req, res) {
+app.delete('/tasks/:id', function (req, res) {
     let taskId = req.params.id
 
     MongoClient.connect(url, function (err, db) {
